@@ -1,5 +1,11 @@
 # Country Codes, Names and Regex for Postal Codes in 4 Languages for Laravel
 
+## Description
+
+Working in Laravel and need a quick fix for a complete listing of the standard country codes? All 
+three unique codes, plus the translated country names and a regular expression field if you 
+need to validate postal codes are included in this repository.
+
 ## Installation
 
 ### Importing Files and Setup
@@ -83,6 +89,7 @@ Only a handful of European entries are active by default in this distribution.
 ## Official Laravel 5.2 Documentation
 
 [Migrations](https://laravel.com/docs/5.2/migrations)
+
 [Seeding](https://laravel.com/docs/5.2/seeding)
 
 
