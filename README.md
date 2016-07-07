@@ -3,8 +3,10 @@
 ## Description
 
 Working in Laravel and need a quick fix for a complete listing of the standard country codes? All 
-three unique codes, plus the translated country names and a regular expression field if you 
-need to validate postal codes are included in this repository.
+three unique codes, plus the translated country names and a regular expression field used 
+for validating postal codes are included in this repository.
+
+Feedback is most welcome, so please feel free to [inform me of any issues](https://github.com/kedweber/laravel_seeder_country_codes/issues).
 
 ## Installation
 
