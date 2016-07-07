@@ -21,8 +21,8 @@ your `run` procedure.
 
 ### Table Creation
 
-*WARNING:* If your present database has the table named `countries` the following will effective destroy the existing
-table and 
+*WARNING:* If your present database has the table named `countries` the following will effectively destroy the existing
+table and all related data
 
 Within a standard Laravel table, all your previous migrations are recorded after the name of the file migration file.
 In our case the entry `1999_01_01_000000_create_countries_table` does not yet exist, so we simply need to run
@@ -44,10 +44,22 @@ php artisan db:seed --class=CountriesSeeder
 
 ### Table Description
 
+code 
+code3 
+codeNumeric
+active
+label_nl
+label_en
+label_de
+label_es
+label_fr
+postCode
+domain
 
 ## Official Laravel Documentation
-(Migration)[https://laravel.com/docs/5.2/migrations]
-(Seeding)[https://laravel.com/docs/5.2/seeding]
+
+Migration[https://laravel.com/docs/5.2/migrations]
+Seeding[https://laravel.com/docs/5.2/seeding]
 
 
 
