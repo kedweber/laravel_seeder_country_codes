@@ -1,8 +1,22 @@
 <?php
+/**
+ * CountryCodes  - WeberStudio.net
+ *
+ * @author      KedWeber <black001goat@gmail.com>
+ * @link        http://kedweber.github.io/
+ * @copyright   Copyright (c) 2002, KedWeber
+ * @license     Creative Commons
+ *
+ */
 
 use Illuminate\Database\Seeder;
 use App\Country;
 
+/**
+ *
+ * Class CountriesSeeder
+ * @package CountryCodes
+ */
 class CountriesSeeder extends Seeder
 {
 

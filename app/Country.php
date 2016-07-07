@@ -1,9 +1,22 @@
 <?php
+/**
+ * CountryCodes  - WeberStudio.net
+ *
+ * @author      KedWeber <black001goat@gmail.com>
+ * @link        http://kedweber.github.io/
+ * @copyright   Copyright (c) 2002, KedWeber
+ * @license     Creative Commons
+ *
+ */
 
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Country
+ * @package App
+ */
 class Country extends Model
 {
     /**
@@ -19,7 +32,7 @@ class Country extends Model
      * @var array
      */
     protected $fillable = [
-        'code', 'code3', 'codeNumeric', 'postCode', 'active', 'label_nl', 'label_en', 'label_es', 'label_fr'
+        'code', 'code3', 'codeNumeric', 'postCode', 'active', 'label_nl', 'label_en', 'label_es', 'label_fr', 'domain'
     ];
 
     /**

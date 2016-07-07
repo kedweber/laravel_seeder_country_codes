@@ -48,7 +48,7 @@ php artisan db:seed --class=CountriesSeeder
 
 ### Table Description
 
-| Field Name | Type |
+| Field Name | Type | Description | 
 | --- | --- | --- |
 | id | numeric | unique |
 | code | string | ISO 3166-1 alpha-2 |
@@ -63,11 +63,10 @@ php artisan db:seed --class=CountriesSeeder
 | postCode | string | Regex for postal code |
 | domain | string | internet domain name | 
 
-## Official Laravel Documentation
+## Official Laravel 5.2 Documentation
 
-[Migrations](https://laravel.com/docs/5.2/migrations)
-
-[Seeding](https://laravel.com/docs/5.2/seeding)
+    * [Migrations](https://laravel.com/docs/5.2/migrations)
+    * [Seeding](https://laravel.com/docs/5.2/seeding)
 
 
 

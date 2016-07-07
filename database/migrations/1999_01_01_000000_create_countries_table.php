@@ -1,8 +1,21 @@
 <?php
+/**
+ * CountryCodes  - WeberStudio.net
+ *
+ * @author      KedWeber <black001goat@gmail.com>
+ * @link        http://kedweber.github.io/
+ * @copyright   Copyright (c) 2002, KedWeber
+ * @license     Creative Commons
+ *
+ */
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+/**
+ * Class CreateCountriesTable
+ * @package CountryCodes
+ */
 class CreateCountriesTable extends Migration
 {
     /**
