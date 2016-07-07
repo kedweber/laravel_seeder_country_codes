@@ -6,8 +6,9 @@
 
 The full paths are provided within this repository. Simply merge the two files:
 
-    1. 1999_01_01_000000_create_countries_table.php
-    2. CountriesSeeder.php
+    1. Country.php
+    2. 1999_01_01_000000_create_countries_table.php
+    3. CountriesSeeder.php
     
 into their respective directories of your current Laravel installation. You will likely want to
 add a few lines of code into your *DatabaseSeeder.php* file. The following code needs to go after 
@@ -18,6 +19,9 @@ your `run` procedure.
     // the following line is optional
     $this->command->info('Countries table of codes, postcode validation, languages seeded!');
 ```
+
+### Adding the model
+
 
 ### Table Creation
 
@@ -44,22 +48,26 @@ php artisan db:seed --class=CountriesSeeder
 
 ### Table Description
 
-code 
-code3 
-codeNumeric
-active
-label_nl
-label_en
-label_de
-label_es
-label_fr
-postCode
-domain
+| Field Name | Type |
+| --- | --- | --- |
+| id | numeric | unique |
+| code | string | ISO 3166-1 alpha-2 |
+| code3 | string | ISO 3166-1 alpha-3 |
+| codeNumeric | string | Due to 0 prefixes |
+| active | boolean | option for activating the use of a particular entry |
+| label_nl | string | Dutch country name |
+| label_en | string | English country name |
+| label_de | string | German country name |
+| label_es | string | Spanish country name |
+| label_fr | string | French country name |
+| postCode | string | Regex for postal code |
+| domain | string | internet domain name | 
 
 ## Official Laravel Documentation
 
-Migration[https://laravel.com/docs/5.2/migrations]
-Seeding[https://laravel.com/docs/5.2/seeding]
+[Migrations](https://laravel.com/docs/5.2/migrations)
+
+[Seeding](https://laravel.com/docs/5.2/seeding)
 
 
 
