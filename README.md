@@ -6,9 +6,9 @@
 
 The full paths are provided within this repository. Simply merge the two files:
 
-    1. Country.php
-    2. 1999_01_01_000000_create_countries_table.php
-    3. CountriesSeeder.php
+    1. Country.php - Model
+    2. 1999_01_01_000000_create_countries_table.php - Migration
+    3. CountriesSeeder.php - Database seeder
     
 into their respective directories of your current Laravel installation. You will likely want to
 add a few lines of code into your *DatabaseSeeder.php* file. The following code needs to go after 
@@ -20,7 +20,22 @@ your `run` procedure.
     $this->command->info('Countries table of codes, postcode validation, languages seeded!');
 ```
 
-### Adding the model
+### Adding the Model
+
+Normally, Laravel defaults its Model creation to the App directory. `Country.php` uses the App namespace. 
+If you have modified the location of your models, you will want to edit the namespace. 
+
+NOTE: If you want the standard two timestamp fields; `created_at` and `updated_at` you will want to remove
+the following lines from the Country model.
+
+```
+    /**
+     * Indicates if the model should be timestamped.
+     *
+     * @var bool
+     */
+    public $timestamps = false;
+```
 
 
 ### Table Creation
@@ -63,10 +78,12 @@ php artisan db:seed --class=CountriesSeeder
 | postCode | string | Regex for postal code |
 | domain | string | internet domain name | 
 
+Only a handful of European entries are active by default in this distribution.
+
 ## Official Laravel 5.2 Documentation
 
-    * [Migrations](https://laravel.com/docs/5.2/migrations)
-    * [Seeding](https://laravel.com/docs/5.2/seeding)
+[Migrations](https://laravel.com/docs/5.2/migrations)
+[Seeding](https://laravel.com/docs/5.2/seeding)
 
 
 
