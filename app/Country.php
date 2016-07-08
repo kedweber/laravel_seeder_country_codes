@@ -4,7 +4,7 @@
  *
  * @author      KedWeber <black001goat@gmail.com>
  * @link        http://kedweber.github.io/
- * @copyright   Copyright (c) 2002, KedWeber
+ * @copyright   Copyright (c) 2016, KedWeber
  * @license     Creative Commons
  *
  */
